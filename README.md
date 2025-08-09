@@ -71,15 +71,15 @@ The app categorizes BMI as:
 
 ## 📷 App Screenshot
 
-<img width="1050" height="800" alt="BMI" src="https://github.com/user-attachments/assets/2d7e4352-684c-461e-861a-7065775a9e8f" />
-<img width="1920" height="1080" alt="Clean and Modern App Portfolio Mockup Presentation" src="https://github.com/user-attachments/assets/f5a39d7c-d0f4-41a8-8337-f21a954c892a" />
+<img width="1920" height="1080" alt="BMI" src="https://github.com/user-attachments/assets/41817663-1c3f-4416-a9d7-3aa17def771a" />
+<img width="1920" height="1080" alt="Clean and Modern App Portfolio Mockup Presentation" src="https://github.com/user-attachments/assets/bae61532-b9e6-4e52-a3fc-7354ac37f9aa" />
 
 
 ## 🎥 Demo Video
 
 Watch the BMI Calculator app in action, recorded directly from the Android emulator:
 
-[Click here to watch the demo video](https://github.com/user-attachments/assets/4d22b4e4-5f2e-464c-b0a9-846843f0d67f)
+[Click here to watch the demo video](https://github.com/user-attachments/assets/4cd96bf2-3363-4a77-b46a-9ef5c01323b5)
 
 
 ## License
