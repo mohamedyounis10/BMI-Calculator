@@ -34,72 +34,74 @@ class BMIResultDialog extends StatelessWidget {
       backgroundColor: AppColor.background_dialog,
       child: Padding(
         padding: const EdgeInsets.all(24),
-        child: Container(
-          width: 480.w,
-          height: 400.h,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // BMI
-              Text(
-                'Your BMI:',
-                style: TextStyle(fontSize: 20.sp, fontFamily: 'RobotoMedium', color: Colors.black87),
-              ),
-              SizedBox(height: 8.h),
-              Text(
-                bmi.toStringAsFixed(1),
-                style: TextStyle(fontSize: 48.sp, fontWeight: FontWeight.bold, color: color),
-              ),
-              SizedBox(height: 4.h),
-
-              // Category
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                decoration: BoxDecoration(
-                  color: color.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(12.r),
+        child: Center(
+          child: Container(
+            width: 480.w,
+            height: 400.h,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // BMI
+                Text(
+                  'Your BMI:',
+                  style: TextStyle(fontSize: 20.sp, fontFamily: 'RobotoMedium', color: Colors.black87),
                 ),
-                child: Text(
-                  category,
-                  style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600, color: color),
+                SizedBox(height: 8.h),
+                Text(bmi.toStringAsFixed(1),
+                  style: TextStyle(fontSize: 48.sp, fontWeight: FontWeight.bold, color: color),
                 ),
-              ),
-              SizedBox(height: 10.h),
+                SizedBox(height: 4.h),
 
-              Divider(),
-              SizedBox(height: 8.h),
+                // Category
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: color.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(12.r),
+                  ),
+                  child: Text(
+                    category,
+                    style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600, color: color),
+                  ),
+                ),
+                SizedBox(height: 10.h),
 
-              // Info.
-              Wrap(
-                alignment: WrapAlignment.center,
-                spacing: 16,
-                runSpacing: 8,
-                children: [
-                  InfoItem(label: 'Weight', value: '${weight.toStringAsFixed(0)} kg'),
-                  InfoItem(label: 'Height', value: '${height.toStringAsFixed(0)} cm'),
-                  InfoItem(label: 'Age', value: '$age'),
-                  InfoItem(label: 'Gender',value:  gender),
-                ],
-              ),
-              SizedBox(height: 10.h),
+                Divider(),
+                SizedBox(height: 8.h),
 
-              // Healthy
-              Text(
-                'Healthy weight for the height:',
-                style: TextStyle(fontFamily: 'RobotoMedium', fontSize: 16.sp, color: Colors.black),
-              ),
-              Text(
-                '${minWeight.toStringAsFixed(1)} kg - ${maxWeight.toStringAsFixed(1)} kg',
-                style: TextStyle(fontFamily: 'RobotoSemiBold', fontSize: 16.sp, color: Colors.green[800]),
-              ),
-              SizedBox(height: 20.h),
+                // Info.
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 16,
+                  runSpacing: 8,
+                  children: [
+                    InfoItem(label: 'Weight', value: '${weight.toStringAsFixed(0)} kg'),
+                    InfoItem(label: 'Height', value: '${height.toStringAsFixed(0)} cm'),
+                    InfoItem(label: 'Age', value: '$age'),
+                    InfoItem(label: 'Gender',value:  gender),
+                  ],
+                ),
+                SizedBox(height: 10.h),
 
-              // Button
-              CustomButton(
-                title: 'Close',
-                onPressed: () => Navigator.pop(context),
-              ),
-            ],
+                // Healthy
+                Text(
+                  'Healthy weight for the height:',
+                  style: TextStyle(fontFamily: 'RobotoMedium', fontSize: 16.sp, color: Colors.black),
+                ),
+                Text(
+                  '${minWeight.toStringAsFixed(1)} kg - ${maxWeight.toStringAsFixed(1)} kg',
+                  style: TextStyle(fontFamily: 'RobotoSemiBold', fontSize: 16.sp, color: Colors.green[800]),
+                ),
+                SizedBox(height: 20.h),
+
+                // Button
+                CustomButton(
+                  title: 'Close',
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -1,8 +1,8 @@
-# 🧮 BMI Calculator - Flutter App
+# BMI Calculator
 
 A modern, cross-platform BMI (Body Mass Index) Calculator built with Flutter. This app allows users to easily calculate their BMI by entering their gender, weight, height, and age, and provides instant feedback on their health category.
 
-## 📲 Features
+## Features
 
 - **Animated Splash Screen**: Welcomes users with a smooth animation.
 - **Gender Selection**: Choose between male and female with custom cards.
@@ -12,7 +12,7 @@ A modern, cross-platform BMI (Body Mass Index) Calculator built with Flutter. Th
 - **Responsive Design**: Looks great on all devices using `flutter_screenutil` and `device_preview`.
 - **Custom Theming**: Modern, colorful UI with custom fonts and assets.
 
-## 📱 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -38,7 +38,7 @@ A modern, cross-platform BMI (Body Mass Index) Calculator built with Flutter. Th
    flutter run
    ```
 
-## 🛠️ Project Structure
+## Project Structure
 
 - `lib/main.dart` - App entry point, sets up theming and navigation.
 - `lib/features/` - Contains all app features:
@@ -46,6 +46,7 @@ A modern, cross-platform BMI (Body Mass Index) Calculator built with Flutter. Th
   - `screen_2` - Gender selection screen.
   - `screen_3` - Input screen for weight, height, and age.
   - `screen_result` - BMI calculation logic and result dialog.
+- `lib/cubit/` - State management using Cubit for BMI logic.
 - `assets/images/` - App icons and illustrations.
 - `fonts/` - Custom fonts.
 
@@ -67,22 +68,9 @@ The app categorizes BMI as:
 - **Fonts**: Roboto Medium and SemiBold in `fonts/`
 - **Colors**: Defined in `lib/core/app_color.dart`
 
----
+## Screenshots
 
-## 📷 App Screenshot
-
-<img width="1050" height="800" alt="BMI" src="https://github.com/user-attachments/assets/2d7e4352-684c-461e-861a-7065775a9e8f" />
-<img width="1920" height="1080" alt="Clean and Modern App Portfolio Mockup Presentation" src="https://github.com/user-attachments/assets/f5a39d7c-d0f4-41a8-8337-f21a954c892a" />
-
----
-
-## 🎥 Demo Video
-
-Watch the BMI Calculator app in action, recorded directly from the Android emulator:
-
-[Click here to watch the demo video](https://github.com/user-attachments/assets/4d22b4e4-5f2e-464c-b0a9-846843f0d67f)
-
----
+(Add screenshots here if available)
 
 ## License
 

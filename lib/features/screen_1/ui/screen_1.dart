@@ -1,6 +1,8 @@
 import 'package:bmi/core/app_color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'dart:async';
+import '../../../cubit/logic.dart';
 import '../../screen_2/ui/screen_2.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,10 +35,10 @@ class _Screen1State extends State<Screen1> with SingleTickerProviderStateMixin {
 
     // Timer to move to next screen after 3 seconds
       Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => Screen2()), // Replace with your target screen
-      );
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (_) => Screen2()),
+        );
     });
   }
 
